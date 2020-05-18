@@ -1,4 +1,4 @@
-package com.java.acct;
+package interview.question;
 
 import java.util.Arrays;
 
