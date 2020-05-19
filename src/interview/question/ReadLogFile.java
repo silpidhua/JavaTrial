@@ -12,6 +12,7 @@ public class ReadLogFile {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();
+		// Read file
 		try {
 		File file = new File("Files/log.txt");
 		FileReader fr = new FileReader(file);
@@ -40,6 +41,7 @@ public class ReadLogFile {
 		}
 		System.out.println(largest);
 		System.out.println(largestKey);
+		// Write to a file
 		try{    
 	           FileWriter fw=new FileWriter("Files/testout.txt");    
 	           fw.write(largestKey);    

@@ -13,9 +13,10 @@ public class SecondLargestNumber {
 		System.out.println(ts.lower(ts.last()));
 		return 0;
 	}
+	
 	public int secondLargest(int[] arr ) {
-		int largest = 0;
-		int secondLargest = 0;
+		int largest = -999999999;
+		int secondLargest = -999999999;
 		for(int i =0; i<arr.length; i++) {
 			if(arr[i]>largest) {
 				largest = arr[i];
@@ -33,7 +34,7 @@ public class SecondLargestNumber {
 
 	public static void main(String[] args) {
 		SecondLargestNumber obj = new SecondLargestNumber();
-		System.out.println(obj.secondLargest(new int[] {5,3,4,9,9,1,3,8,8,-2,-10}));
+		System.out.println(obj.secondLargest(new int[] {1,-2,-10}));
 
 	}
 

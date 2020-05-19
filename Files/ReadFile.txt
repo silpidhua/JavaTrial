@@ -1,0 +1,115 @@
+1.	Run length encoded string. -done
+2.	The string repeating from the start should be replaced by * I/p:  ABABCABABCD & O/p : AB*C*D
+3.	A problem to find out the first non-repetitive character of a string(3 different strings were provided)  - Done
+4.Given two fraction passed in as int arrays {like int[] addFraction(int[] fraction1,int[] fraction2)} return the fraction which is result of adding the two input fractions
+•	Fraction is represented as a two element array-[numerator,denominator]
+•	The returned fraction has to be in its simplest form.
+public static int[] addFraction(int[] fraction1,int[] fraction2)
+{
+              //Here we need to implement the solution
+           return (new int[]{0,0});
+}
+ 
+5.Write a program to find if a number is power of ten. - done
+6.Find second largest number from an array. - done
+ 
+One candidate following 2 approaches:
+ with Arrays.sort
+ Find smallest and then second smallest
+7. You have the log file with following format. Basically the log file contains logs coming from different IP addresses and logged in this file. You need to find the IP address from where we are getting more load.   --DOne
+Here the answer is 10.0.0.1.
+ 
+10.0.0.1  user1  2017-06-12  info log details….  Testt1  ,
+10.0.0.1  user1  2017-06-21  info log details….  Testt2  ,
+10.0.0.2  user1  2017-06-21  info log details….  Testt3  ,
+10.0.0.1  user1  2017-06-15  info log details….  Testt4  ,
+10.0.0.3  user1  2017-06-21  info log details….  Testt5 
+
+8.Find the longest repeating subsequence count and also the start index of the repeating substring and the count of characters present in the longest substring.
+9.Find whether a sentence is a pangram sentence, is a sentence that contains every letter of the alphabet at least once. - 
+If it is not a pangram then need to print the letters that are missing in it.  -done
+Need to write test cases also for the same and optimize the written code.
+10.	Return the IpAddress that has occurred maximum times in a log file. Similar to #5
+11.To decide the position of Robot as it moves with respect to up, down, right and left directions described as U,D,R,L respectively.
+Input will be String , for example “UUXXDD” now the output must be in the format of two dimensional array Integer(0, -2)
+
+Test case:sss
+Input : “UUU”
+Output : Integer(0,3) (x axis , y axis)
+ss
+12. Find the index and length of longest tuple(same character)
+
+                 Example String str ="aaaaaabbbbbcc";
+13. Rough reduce the string length. There will be a string with character patterns repeating, we need to replace the repeating pattern with * so that the string length will be reduced
+14. Implement a function that takes in an array of non-negative         numbers and an integer.
+Return the *LENGTH* of the shortest subarray whose sum is at least the integer, and -1 if no such sum exists. - Done
+15. Program to find out the length of the shortest array whose sum is integer with a given array. Similar to #11
+16. Display the count of consecutive character in the format of character and its count". -done
+For Ex: aabbbbccb
+Expected o/p: a2b4c2b1
+      17. Find the square root of a number, N using below steps.
+i.	Make an initial guess to get current estimate(eg: currentEstimate=N/4)
+ii.	newEstimate = currentEstimate-((currentEstimate*currentEstimate-N) /2*currentEstimate)
+iii.	if newEstimate is square root of N, return the value. Else repeat steps 2,3 with newEstimate as currentEstimate.
+
+18.Given a 2D string array of Students with marks , find the maximum average of the student list.
+i/p
+{{“Sam”,”20”},
+{“Tom”,”45”},
+{“George”,”42”},
+{“Tom”,”50”}} answer should be Tom and his average 47.5
+
+
+19.	Write  a program to find the longest palindrome in given string.
+i/p = ABCDCBAKMALYALAM123454321MALAYLAMJABAA
+O/P =  MALYALAM123454321MALAYLAM
+
+20.	Write a code to find the number of time given word appear in a file
+21.	Write a code to compare two string irrespective of order and case in sessitive:
+String = “Abcdre”
+String2 = bdcare”
+Both are equal string
+22.	Unit testing of code
+23.	 Difference between class and instance variable
+24.	 Write a program to find the dot product of two array
+25.	Write a program to find the length of cycle from startindex. Given integers where each element points to the  index of the next element how would you detect if there is a cycle in this array?  
+  Eg.arr = [1,2,0] . startindex  is 0 arr[0] =1 ->arr[1]=2--arr[2] = 0--arr[0] = again 1 Cycle completed .So the length of the Cycle is 3
+
+26.Find the shortest subarray which gives the maximum sum
+
+27.Find Factorial with time complexity less than O(n)
+
+28.Write a function to return an element from pascal triangle, given row and column number. 
+e.g : pascal(0,0)= 1, pascal(2,1)=2, pascal(3,2)=3
+
+def pascal(n,k):
+    res = 1
+    if (k > n - k) :
+        k = n - k
+    for i in range(0 , k) :
+        res = res * (n - i)
+        res = res // (i + 1)
+    print res
+n- row
+k – column
+
+
+Monitor selection process conduct by teacher by eliminating (n-1) number of students where n is total number of students,
+Song will be played, and length of song will be K, teacher will circularly rotate and eliminate Kth index student, the process continues till only 1 student left
+Teacher will start rotate from index 1.
+
+For Ex if there are 4 (n) student and length of song is 2 (k) then 
+teacher will start rotate from index 1, since length of song is 2(k), she stops and eliminated 2nd index student, then she will start from 3rd index and eliminate 4th index student (song length is(k=2))
+next starting index will be 1st and 3nd index student got eliminated 
+so, answer is 1(only remaining student) 
+
+
+1)Find the shortest subarray which gives the maximum sum
+
+2)Find Factorial with time complexity less than O(n)
+
+ 
+
+
+
+

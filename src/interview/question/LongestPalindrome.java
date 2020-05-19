@@ -38,7 +38,9 @@ public class LongestPalindrome {
 	}
 	public String palindromeDynamic(String s) {
 		int sPos=-1,ePos=-1,max=-1;
-		
+		if(palindrome(s)) {
+			return s;
+		}
 		for(int i = 0; i<s.length()-1; i++) {
 			for(int j = i+1; j<s.length(); j++) {
 				if(palindrome(s.substring(i, j))) {
@@ -56,7 +58,7 @@ public class LongestPalindrome {
 	public static void main(String[] args) {
 		LongestPalindrome obj = new LongestPalindrome();
 		//System.out.println(obj.palindromeRecurrsion("ABCDCBAKMALYALAM123454321MALAYLAMJABAA"));
-		System.out.println(obj.palindromeDynamic("ABCDCBAKMALYALAM123454321MALAYLAMJABAA"));
+		System.out.println(obj.palindromeDynamic("ABCDCBA"));
 
 	}
 
