@@ -14,7 +14,9 @@ public class SquareRoot {
 		 return newEstimate;
 	}
 	public static void main(String[] args) {
-		System.out.println(findSquareRoot(64));
+		System.out.println("squareRoot:"+findSquareRoot(64));
+		SquareRoot obj = new SquareRoot();
+		System.out.println(obj.findSquareRoot(9));
 		//System.out.println(Math.sqrt(9));
 
 	}
