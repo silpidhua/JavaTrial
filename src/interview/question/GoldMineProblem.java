@@ -1,18 +1,23 @@
 package interview.question;
 
 public class GoldMineProblem {
+	
+	//declare an 2d array
 	int maxArr[][]= null;
 	public int findGoldAmount(int arr[][]) {
 		int row = arr.length;
 		int col = arr[0].length;
+		
+		//Initialize the 2 d array with -1 and the size is same of given array
 		maxArr= new int[row][col];
 		for(int i = 0; i<row; i++) {
 			for(int j =0; j<col; j++) {
 				maxArr[i][j] = -1;
 			}
 		}
+		//call the recursion function
 		int max = 0;
-		for(int i =0; i<row; i++) {
+		for(int i = 0; i<row; i++) {
 			int maxVal = findMaxRecurrsive(arr,i,0);
 			max = Math.max(maxVal, max);
 		}
