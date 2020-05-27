@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 
 public class MinimumNumberOfJumps {
 	
+	// find minimum jump to reach end using recursion
 	public int minJump(int[] arr) {
 		System.out.println("Solving problem "+ Arrays.toString(arr));
 		if(arr[0]>=arr.length) {
@@ -22,6 +23,8 @@ public class MinimumNumberOfJumps {
 			return min+1;
 		}
 	}
+	
+	// find minimum jump to reach end using recursion and dynamic programming
 	private int[] savedArray = null;
 	public int minJumpDynamic(int arr[]) {
 		int n = arr.length;
