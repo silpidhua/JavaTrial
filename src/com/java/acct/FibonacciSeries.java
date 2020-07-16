@@ -15,7 +15,7 @@ public class FibonacciSeries {
 	}
 	
 	// print fibonacci series till nth position
-	static int n1=0,n2=1,n3=0;
+	//static int n1=0,n2=1,n3=0;
 	public void printFiboSeries(int n) {
 		for(int i=0; i<=n; i++) {
 			System.out.println(findFiboValRec(i));
@@ -52,8 +52,8 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		FibonacciSeries obj = new FibonacciSeries();
-		System.out.println(obj.findFiboDynamic(9));
-//		obj.printFiboSeries(9);
+		//System.out.println(obj.findFiboDynamic(9));
+		obj.printFiboSeries(9);
 	}
 
 }
