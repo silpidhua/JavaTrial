@@ -1,5 +1,5 @@
 /*Maximum sum in a 2 x n grid such that no two elements are adjacent*/
-package DynamicProgramming;
+package dynamic.programming;
 
 import java.util.Arrays;
 
