@@ -22,7 +22,7 @@ public class RotateMatrix {
 
 	public static void main(String[] args) {
 		RotateMatrix obj = new RotateMatrix();
-		int[][] myMatrix = {{1,2,3},{2,3,1},{3,1,1}};
+		int[][] myMatrix = {{1,2,3},{2,3,1},{3,1,2}};
 		boolean isRotate = true;
 		for(int i = 1; i<myMatrix.length; i++) {
 			boolean isRotateRow = obj.isRotateRow(myMatrix[0], myMatrix[i]);
